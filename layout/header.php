@@ -22,6 +22,27 @@
 		<![endif]-->
 
 	</head>
+	<style>
+		.social [class*="fa fa-"] {
+			background-color: blue;
+			border-radius: 30px;
+			color: #fff;
+			display: inline-block;
+			height: 30px;
+			line-height: 30px;
+			margin: auto 3px;
+			width: 30px;
+			font-size: 15px;
+			text-align: center;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100% !important;
+  background-color: #fff;
+  color:#18345D;
+}
+	</style>
 <?php 
 	$currentpage = "$_SERVER[REQUEST_URI]";
  ?>
@@ -33,10 +54,10 @@
 						<img src="images/logo.png" alt="" class="logo">
 						<h1 class="site-title">Gospel Assemblies of Christ</h1>
 					</a>
-					<div class="main-navigation">
+					<div class="main-navigation" id="navbar">
 						<button class="menu-toggle"><i class="fa fa-bars"></i> Menu</button>
 						<ul class="menu">
-							<li class="menu-item <?php if (str_ends_with($currentpage ,"index.php")) {echo "current-menu-item"; } else  {echo "";}?>"><a href="index.php">Homepage</a></li>
+							<li class="menu-item <?php if (str_ends_with($currentpage ,"index.php")) {echo "current-menu-item"; } else  {echo "";}?>"><a href="index.php">Home</a></li>
 							<li class="menu-item <?php if (str_ends_with($currentpage ,"about.php")) {echo "current-menu-item"; } else  {echo "";}?>"><a href="about.php">About Us</a></li>
 							<li class="menu-item <?php if (str_ends_with($currentpage ,"events.php")) {echo "current-menu-item"; } else  {echo "";}?>"><a href="events.php">Annual Events</a></li>
 							<li class="menu-item <?php if (str_ends_with($currentpage ,"venues.php")) {echo "current-menu-item"; } else  {echo "";}?>"><a href="venues.php">Our Venues</a></li>
@@ -47,6 +68,6 @@
 					<div class="mobile-navigation"></div>
 				</div>
 			</header> <!-- .site-header -->
-
+	<div class="content">
 		 
 		

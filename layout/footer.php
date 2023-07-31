@@ -1,3 +1,4 @@
+</div>
 <footer class="site-footer">
 				<div class="container">
 					<div class="row">
@@ -27,7 +28,13 @@
 						</div>
 					</div> <!-- .row -->
 
-					<p class="colophon">Copyright 2014 True Church. All right reserved</p>
+					<div class="col-md-5">
+                    <p class="colophon">Copyright <?php echo date("Y"); ?> Gospel Assemblies of Christ. All right reserved</p>
+                    </div>
+                    <div class="col-md-5 social">
+                        <a  target="_blank" href="https://m.facebook.com/people/Gospel-Assemblies-Of-Christ/100067421603883/"><i class="fa fa-facebook"></i></a>
+                    </div>
+
 				</div><!-- .container -->
 			</footer> <!-- .site-footer -->
 
@@ -37,7 +44,20 @@
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/plugins.js"></script>
 		<script src="js/app.js"></script>
-		
+		<script>
+			window.onscroll = function() {myFunction()};
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+			}
+</script>
+
 	</body>
 
 </html>
