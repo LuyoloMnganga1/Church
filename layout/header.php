@@ -35,13 +35,6 @@
 			font-size: 15px;
 			text-align: center;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100% !important;
-  background-color: #fff;
-  color:#18345D;
-}
 	</style>
 <?php 
 	$currentpage = "$_SERVER[REQUEST_URI]";
